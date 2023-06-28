@@ -14,7 +14,7 @@ char *par;
 FILE *myMontyFile;
 while (argc != 2)
 {
-fprintf(stderr, "Usage: monty file\n");
+fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 myMontyFile = fopen(argv[1], "r");
