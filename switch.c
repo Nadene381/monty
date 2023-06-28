@@ -45,7 +45,6 @@ case 'n':
 if (strcmp(opcode, "nop") == 0)
 {
 nop(&stack, line_number);
-printf("Nop operation: No operation\n");
 }
 else
 {
