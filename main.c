@@ -27,7 +27,15 @@ while (fgets(line, sizeof(line), myMontyFile) != NULL)
 {
 opcode = strtok(line, " \t\n");
 par = strtok(NULL, " \t\n");
+if (opcode != NULL)
+{
 mySwitch(opcode, par, line_number);
+}
+else
+{
+fprintf(stderr, "L%d: unknown instruction (NULL)\n", line_number);
+exit(EXIT_FAILURE);
+}
 line_number++;
 }
 fclose(myMontyFile);
