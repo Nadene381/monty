@@ -40,7 +40,9 @@ else if (strcmp(opcode, "pall") == 0)
 pall(&stack, line_number);
 printf("Pall operation: Print all elements in the stack\n");
 }
-else if (strcmp(opcode, "nop") == 0)
+break;
+case 'n':
+if (strcmp(opcode, "nop") == 0)
 {
 nop(&stack, line_number);
 printf("Nop operation: No operation\n");
