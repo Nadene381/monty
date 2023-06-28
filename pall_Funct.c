@@ -12,6 +12,6 @@ stack_t *index = *stack;
 while (index != NULL)
 {
 printf("%d\n", index->n);
-index = index->prev;
+index = index->next;
 }
 }
