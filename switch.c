@@ -33,12 +33,11 @@ fprintf(stderr, "L%d: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
 push(&stack, n, line_number);
-printf("Push operation: Push %d to the stack\n", n);
+printf("%d\n",n);
 }
 else if (strcmp(opcode, "pall") == 0)
 {
 pall(&stack, line_number);
-printf("Pall operation: Print all elements in the stack\n");
 }
 break;
 case 'n':
